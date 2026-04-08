@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Réalisations de Baptiste Serrano — documentation de projets à télécharger en PDF."
+    />
+    <title>Baptiste Serrano — Réalisations</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="shortcut icon" href="assets/img/logo.png" />
+    <link rel="apple-touch-icon" href="assets/img/logo.png" />
+    <style>
+      .docs-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .doc-card {
+        overflow: hidden;
+      }
+
+      .doc-card .card-media {
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(255, 255, 255, 0.14),
+            transparent 45%
+          ),
+          linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0.02)
+          );
+      }
+
+      .doc-card .card-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: calc(var(--radius) - 8px);
+      }
+
+      .pdf-visual {
+        width: 120px;
+        height: 150px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+        backdrop-filter: blur(8px);
+      }
+
+      .page-intro {
+        max-width: 760px;
+      }
+
+      @media (max-width: 820px) {
+        .docs-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-theme="light">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#top" aria-label="Retour à l'accueil">
+          <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+          <span class="brand-text">
+            <span class="brand-name">Baptiste</span>
+            <span class="brand-name strong">Serrano</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="index.html#projets">Projets</a>
+          <a href="index.html#explorations">Explorations</a>
+          <a href="index.html#stack">Technologies</a>
+          <a href="index.html#apropos">À propos</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            class="icon-btn"
+            href="https://github.com/baba-chicharitos"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir mon GitHub"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.19 1.18A11.1 11.1 0 0 1 12 6.1c.98 0 1.97.13 2.89.38 2.22-1.5 3.19-1.18 3.19-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+              />
+            </svg>
+          </a>
+
+          <a class="btn btn-primary" href="index.html#contact">Me contacter</a>
+        </div>
+
+        <button
+          class="burger"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-nav container" aria-hidden="true">
+        <a href="index.html#projets">Projets</a>
+        <a href="index.html#explorations">Explorations</a>
+        <a href="index.html#stack">Technologies</a>
+        <a href="index.html#apropos">À propos</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy z-index-10 page-intro">
+            <p class="eyebrow z-index-10">Mes réalisations</p>
+            <h1>
+              Documentation de <span class="accent z-index-10">projets</span>
+            </h1>
+            <p class="lead z-index-10">
+              Une sélection de projets présentés sous forme de documentation.
+              Très majoritairement réalisé dans le cadre de mon BTS SIO, les
+              projets peuvent avoir des contextes différents tous expliqué au
+              début des ducoumentations.
+            </p>
+            <div class="hero-cta z-index-10">
+              <a class="btn btn-primary z-index-10" href="#docs"
+                >Voir les documentations</a
+              >
+              <a class="btn btn-ghost z-index-10" href="index.html"
+                >Retour au portfolio</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Portrait de Baptiste Serrano">
+            <div class="hero-background-visual">
+              <img src="assets/img/etoile.png" alt="fond étoilé" />
+            </div>
+            <div class="profile-card">
+              <div class="profile-photo-wrap">
+                <img
+                  class="profile-photo"
+                  src="assets/img/moi.png"
+                  alt="Photo de Baptiste Serrano"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section z-index-10" id="docs">
+        <div class="container z-index-10">
+          <header class="section-head z-index-10">
+            <h2 class="z-index-10">Mes réalisations</h2>
+            <p class="sub z-index-10">
+              Clique sur une carte pour télécharger la documentation
+              correspondante.
+            </p>
+          </header>
+
+          <div class="docs-grid z-index-10">
+            <article class="card project-card doc-card z-index-10">
+              <div class="card-media z-index-10">
+                <img src="assets/img/tdlLogo.png" alt="tdlLogo" />
+              </div>
+              <div class="card-body z-index-10">
+                <h3>To Do List</h3>
+                <p class="muted z-index-10">
+                  Une web app téléchargeable en PWA pour gérer ses tâches
+                  quotidiennes. Projets personnel pour des membres de ma famille
+                </p>
+                <div class="tags z-index-10">
+                  <span class="tag z-index-10">Documentation</span>
+                  <span class="tag z-index-10">PDF</span>
+                  <span class="tag z-index-10">Perso</span>
+                </div>
+                <div class="card-actions z-index-10">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="doc/pdf/TDL.pdf"
+                    download
+                    >Télécharger le PDF</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-card doc-card z-index-10">
+              <div class="card-media z-index-10">
+                <div class="pdf-visual">PDF</div>
+              </div>
+              <div class="card-body z-index-10">
+                <h3>Projet 2</h3>
+                <p class="muted z-index-10">
+                  Présentation du contexte, des fonctionnalités et du
+                  fonctionnement du projet.
+                </p>
+                <div class="tags z-index-10">
+                  <span class="tag z-index-10">Documentation</span>
+                  <span class="tag z-index-10">PDF</span>
+                </div>
+                <div class="card-actions z-index-10">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="docs/projet-2.pdf"
+                    download
+                    >Télécharger le PDF</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-card doc-card z-index-10">
+              <div class="card-media z-index-10">
+                <div class="pdf-visual">PDF</div>
+              </div>
+              <div class="card-body z-index-10">
+                <h3>Projet 3</h3>
+                <p class="muted z-index-10">
+                  Vue d’ensemble du projet avec les choix d’implémentation
+                  principaux.
+                </p>
+                <div class="tags z-index-10">
+                  <span class="tag z-index-10">Documentation</span>
+                  <span class="tag z-index-10">PDF</span>
+                </div>
+                <div class="card-actions z-index-10">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="docs/projet-3.pdf"
+                    download
+                    >Télécharger le PDF</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-card doc-card z-index-10">
+              <div class="card-media z-index-10">
+                <div class="pdf-visual">PDF</div>
+              </div>
+              <div class="card-body z-index-10">
+                <h3>Projet 4</h3>
+                <p class="muted z-index-10">
+                  Documentation technique et fonctionnelle à destination du
+                  lecteur.
+                </p>
+                <div class="tags z-index-10">
+                  <span class="tag z-index-10">Documentation</span>
+                  <span class="tag z-index-10">PDF</span>
+                </div>
+                <div class="card-actions z-index-10">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="docs/projet-4.pdf"
+                    download
+                    >Télécharger le PDF</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">
+          © <span id="year">2025</span> Baptiste Serrano — Portfolio
+        </p>
+        <a class="muted" href="#top">Retour en haut</a>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const burger = document.querySelector(".burger");
+        const mobileNav = document.querySelector(".mobile-nav");
+        const year = document.getElementById("year");
+
+        if (year) {
+          year.textContent = new Date().getFullYear();
+        }
+
+        if (burger && mobileNav) {
+          burger.addEventListener("click", () => {
+            const expanded = burger.getAttribute("aria-expanded") === "true";
+            burger.setAttribute("aria-expanded", String(!expanded));
+            mobileNav.style.display = expanded ? "none" : "flex";
+            mobileNav.setAttribute("aria-hidden", String(expanded));
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

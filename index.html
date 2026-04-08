@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Baptiste Serrano — Développeur web junior (BTS SIO SLAM). Projets, expérimentations, animations et technologies."
+    />
+    <title>Baptiste Serrano — Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="module" src="js/models.js"></script>
+    <link rel="shortcut icon" href="assets/img/logo.png" />
+    <link rel="apple-touch-icon" href="assets/img/logo.png" />
+    <script src="js/slide.js" defer></script>
+  </head>
+
+  <body data-theme="light">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Retour en haut de la page">
+          <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+          <span class="brand-text">
+            <span class="brand-name">Baptiste</span>
+            <span class="brand-name strong">Serrano</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="#projets">Projets</a>
+          <a href="#explorations">Explorations</a>
+          <a href="#stack">Technologies</a>
+          <a href="#parcours">Parcours pro</a>
+          <a href="#apropos">À propos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            class="icon-btn"
+            href="https://github.com/baba-chicharitos"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir mon GitHub"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.19 1.18A11.1 11.1 0 0 1 12 6.1c.98 0 1.97.13 2.89.38 2.22-1.5 3.19-1.18 3.19-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+              />
+            </svg>
+          </a>
+
+          <a class="btn btn-primary" href="#contact">Me contacter</a>
+        </div>
+
+        <button
+          class="burger"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-nav container" aria-hidden="true">
+        <a href="#projets">Projets</a>
+        <a href="#explorations">Explorations</a>
+        <a href="#stack">Technologies</a>
+        <a href="#parcours">Parcours pro</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy z-index-10">
+            <p class="eyebrow z-index-10">
+              Développeur fullstack junior • BTS SIO SLAM
+            </p>
+
+            <h1>Baptiste <span class="accent z-index-10">Serrano</span></h1>
+
+            <p class="lead z-index-10">
+              Je crée des <strong>web apps JavaScript</strong> et des
+              <strong>solutions logicielles</strong> : propres, responsives et
+              orientées utilisateur.
+              <br />
+              <span class="muted z-index-10">
+                Créativité maîtrisée, rigueur, écoute et compréhension sont les
+                mots qui me guident.
+              </span>
+            </p>
+
+            <div class="hero-cta z-index-10">
+              <a class="btn btn-primary z-index-10" href="real.html">
+                Voir mes réalisations
+              </a>
+              <a class="btn btn-ghost z-index-10" href="#contact">
+                Demander une mission
+              </a>
+            </div>
+
+            <ul class="chips z-index-10" aria-label="Points forts">
+              <li class="chip z-index-10">Landing pages</li>
+              <li class="chip z-index-10">Web apps JS</li>
+              <li class="chip z-index-10">Fetch / async-await</li>
+              <li class="chip z-index-10">localStorage</li>
+              <li class="chip z-index-10">Git (équipe)</li>
+              <li class="chip z-index-10">Anglais oral : à l’aise</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Portrait de Baptiste Serrano">
+            <div class="hero-background-visual">
+              <img src="assets/img/etoile.png" alt="fond étoilé" />
+            </div>
+            <div class="profile-card">
+              <div class="profile-photo-wrap">
+                <img
+                  class="profile-photo"
+                  src="assets/img/moi.png"
+                  alt="Photo de Baptiste Serrano"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section z-index-10" id="projets">
+        <div class="container z-index-10">
+          <header class="section-head z-index-10">
+            <h2 class="z-index-10">Mes projets</h2>
+            <p class="sub z-index-10">
+              Quelques réalisations concrètes, avec une approche propre et une
+              intention UX.
+            </p>
+          </header>
+
+          <div class="grid cards-3 z-index-10">
+            <article class="card project-card z-index-10">
+              <div class="card-media z-index-10">
+                <img src="assets/img/portfolio.png" alt="Site du portfolio" />
+              </div>
+              <div class="card-body z-index-10">
+                <h3>Mon Portfolio (refonte)</h3>
+                <p class="muted z-index-10">
+                  Vitrine claire, responsive, animations sobres, structure
+                  modulaire.
+                </p>
+
+                <div class="tags z-index-10">
+                  <span class="tag z-index-10">HTML</span>
+                  <span class="tag z-index-10">CSS</span>
+                  <span class="tag z-index-10">JS</span>
+                  <span class="tag z-index-10">Three.js</span>
+                </div>
+
+                <div class="card-actions z-index-10">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="#"
+                    aria-label="Voir le projet Portfolio"
+                  >
+                    Voir le projet
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-card z-index-10">
+              <div class="card-media z-index-10">
+                <img src="assets/img/nuitInfo.png" alt="Site nuit de l'info" />
+              </div>
+              <div class="card-body z-index-10">
+                <h3>Nuit de l’Info — site</h3>
+                <p class="muted z-index-10">
+                  Travail en équipe, leader du projet, contraintes de temps,
+                  livrable.
+                </p>
+
+                <div class="tags z-index-10">
+                  <span class="tag z-index-10">HTML</span>
+                  <span class="tag z-index-10">CSS</span>
+                  <span class="tag z-index-10">JS</span>
+                  <span class="tag z-index-10">Git</span>
+                </div>
+
+                <div class="card-actions z-index-10">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="#"
+                    aria-label="Voir le projet Nuit de l'Info"
+                  >
+                    Voir le projet
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-card teaser z-index-10">
+              <div class="card-media z-index-10">
+                <div
+                  class="hourglass-viewer"
+                  id="hourglassViewer"
+                  aria-label="Sablier 3D"
+                ></div>
+              </div>
+              <div class="card-body z-index-10">
+                <h3>Bientôt : un SaaS</h3>
+                <p class="muted z-index-10">Un SaaS pensé pour motiver.</p>
+
+                <div class="tags z-index-10">
+                  <span class="tag z-index-10">Web app JS</span>
+                  <span class="tag ghost z-index-10">En développement</span>
+                </div>
+
+                <div class="card-actions">
+                  <a class="btn btn-ghost btn-sm" href="#contact">
+                    Être prévenu
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="explorations">
+        <div class="container">
+          <header class="section-head">
+            <h2>Explorations & tests</h2>
+            <p class="sub">
+              En dehors des projets “finis”, je teste des animations,
+              interactions et concepts techniques. Certains restent des
+              expérimentations, d’autres deviennent des briques réutilisables.
+            </p>
+          </header>
+          <a
+            class="btn btn-primary btn-sm spc-top"
+            href="projects/animation.html"
+            aria-label="Voir mes animations annexes"
+          >
+            Voir les animations
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="stack">
+        <div class="container">
+          <header class="section-head">
+            <h2>Technologies</h2>
+            <p class="sub">
+              Les technologies avec lesquelles j'ai déjà travaillé.
+            </p>
+          </header>
+        </div>
+        <div class="contentCard">
+          <svg
+            viewBox="0 0 320 512"
+            id="left"
+            class="left"
+            onclick="turnLeft()"
+          >
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+            />
+          </svg>
+          <svg
+            viewBox="0 0 320 512"
+            id="right"
+            class="right"
+            onclick="turnRight()"
+          >
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+            />
+          </svg>
+          <div class="img" id="photo1"></div>
+          <div class="img" id="photo2"></div>
+          <div class="img" id="photo3"></div>
+          <div class="img" id="photo4"></div>
+          <div class="img" id="photo5"></div>
+          <div class="point">
+            <div class="po" id="po1" onclick="open1()"></div>
+            <div class="po" id="po2" onclick="open2()"></div>
+            <div class="po" id="po3" onclick="open3()"></div>
+            <div class="po" id="po4" onclick="open4()"></div>
+            <div class="po" id="po5" onclick="open5()"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="parcours">
+        <div class="container">
+          <header class="section-head">
+            <h2>Parcours pro</h2>
+          </header>
+
+          <div class="about-grid">
+            <div class="card about-card">
+              <h3>Mon profil</h3>
+              <p class="muted">
+                Je m'appelle Baptiste Serrano, j'ai 21 ans et je suis
+                informaticien passionné. A l'âge de 16 ans, j'ai découvert le
+                développement web, ce qui a déclenché ma passion pour la
+                création d'applications, web ou mobile. Comme je ne voulais pas
+                en faire un métier au départ, j'avais orienté mes études vers le
+                droit, sauf que ma vraie passion a pris le dessus. J'ai donc
+                arrété rapidemetn el droit et me suis réorienter rapidement.
+                J'ai donc suivi un parcours autodidacte en attendant d'intégrer
+                le lycée Ozenne pour obtenir le BTS SIO SLAM. En parallèle, j'ai
+                obtenu le BAFA, ce qui m'a permis de développer des compétences
+                en gestion de groupe et en communication. Récemment, j'ai
+                également obtenu une certification MOOC en cybersécurité,
+                renforçant ainsi mes connaissances dans ce domaine crucial. Mon
+                parcours est marqué par une soif d'apprendre constante, une
+                capacité d'adaptation et une volonté de progresser dans le monde
+                de l'informatique.
+              </p>
+              <div class="about-badges">
+                <span class="badge">21 ans</span>
+                <span class="badge">Bac général</span>
+                <span class="badge">BAFA</span>
+                <span class="badge">Cybersécurité</span>
+              </div>
+            </div>
+
+            <div class="card about-card">
+              <h3>Mes diplômes & certifications</h3>
+              <div class="list">
+                <div>
+                  <strong>Bac général</strong>
+                  <p class="muted">
+                    Une formation qui m’a donné un socle global, de la méthode
+                    et une capacité d’adaptation utile pour apprendre vite et
+                    évoluer dans des environnements variés.
+                  </p>
+                </div>
+
+                <div>
+                  <strong>BAFA</strong>
+                  <p class="muted">
+                    Le BAFA m’a permis de développer mon sens des
+                    responsabilités, l’organisation, la communication et la
+                    gestion de groupe. Des compétences que je réutilise aussi
+                    dans mes projets et mon travail en équipe.
+                  </p>
+                </div>
+
+                <div>
+                  <strong>Certification MOOC cybersécurité</strong>
+                  <p class="muted">
+                    Cette certification vient appuyer mon intérêt pour la
+                    cybersécurité. Elle m’a permis de renforcer mes bases sur
+                    les bonnes pratiques, les risques numériques et les enjeux
+                    actuels liés à la sécurité informatique.
+                  </p>
+                  <a
+                    class="btn btn-ghost btn-sm"
+                    href="docs/pdf/certification-mooc-cybersecurite.pdf"
+                    download
+                  >
+                    Diplôme du Mooc
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="apropos">
+        <div class="container">
+          <header class="section-head">
+            <h2>À propos</h2>
+            <p class="sub">
+              Autodidacte, puis étudiant, j’apprends en construisant et en
+              itérant. Je cherche une progression solide vers le monde de
+              l'entrepreneuriat, avec une trajectoire long terme vers la
+              cybersécurité.
+            </p>
+          </header>
+
+          <div class="about-grid">
+            <div class="card about-card">
+              <h3>Ma manière de travailler</h3>
+              <ul class="list">
+                <li>Méthode Agile</li>
+                <li>Élaboration d'un cahier des charges détaillé</li>
+                <li>Structurer les étapes de la mission</li>
+                <li>Développement itératif et incrémental à partir d’un MVP</li>
+                <li>Développement actif avec communication très régulière</li>
+              </ul>
+            </div>
+
+            <div class="card about-card">
+              <h3>Ce que je recherche</h3>
+              <p class="muted">
+                Des missions concrètes et des projets où je peux apprendre vite,
+                livrer proprement, et progresser.
+              </p>
+              <div class="about-badges">
+                <span class="badge">Curiosité</span>
+                <span class="badge">Rigueur</span>
+                <span class="badge">Créativité maîtrisée</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="contact">
+        <div class="container">
+          <header class="section-head">
+            <h2>Contact</h2>
+            <p class="sub">
+              Tu as un besoin (landing page / web app JS) ou une opportunité ?
+              On en parle.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <form
+              id="contactForm"
+              class="card form"
+              action="https://formsubmit.co/ajax/baptiste.ser09@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nouveau message depuis le portfolio"
+              />
+
+              <div class="field">
+                <label for="name">Nom</label>
+                <input
+                  id="name"
+                  name="Nom"
+                  type="text"
+                  placeholder="Ton nom"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="Email"
+                  type="email"
+                  placeholder="ton@email.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="type">Type de projet</label>
+                <select id="type" name="Type de projet" required>
+                  <option value="" selected disabled>Choisir…</option>
+                  <option value="landing">Landing page</option>
+                  <option value="webapp">Petite web app JS</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="Message"
+                  rows="5"
+                  placeholder="Contexte, délai, budget (si tu veux)..."
+                  required
+                ></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Envoyer</button>
+              <p class="muted tiny" id="formStatus"></p>
+            </form>
+
+            <aside class="card contact-side">
+              <h3>Me joindre</h3>
+              <ul class="contact-list">
+                <li>
+                  <span class="k">Email</span>
+                  <a href="mailto:baptiste.ser09@gmail.com">
+                    baptiste.ser09@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <span class="k">GitHub</span>
+                  <a
+                    href="https://github.com/Baba-chicharitos"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Baba-chicharitos
+                  </a>
+                </li>
+                <li>
+                  <span class="k">LinkedIn</span>
+                  <a
+                    href="https://www.linkedin.com/in/baptisteserrano/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    baptisteSerrano
+                  </a>
+                </li>
+              </ul>
+
+              <div class="divider"></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted">
+          © <span id="year">2025</span> Baptiste Serrano — Portfolio
+        </p>
+        <a class="muted" href="#top">Retour en haut</a>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast">
+      <div class="toast-content">
+        <span class="toast-icon" id="toastIcon">✓</span>
+        <div class="toast-text">
+          <strong id="toastTitle">Message envoyé</strong>
+          <p id="toastMessage">
+            Merci, ton message a bien été envoyé. Je te répondrai dès que
+            possible.
+          </p>
+        </div>
+        <button
+          class="toast-close"
+          id="toastClose"
+          type="button"
+          aria-label="Fermer"
+        >
+          ×
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contactForm");
+        const statusText = document.getElementById("formStatus");
+        const toast = document.getElementById("toast");
+        const toastClose = document.getElementById("toastClose");
+        const toastTitle = document.getElementById("toastTitle");
+        const toastMessage = document.getElementById("toastMessage");
+        const toastIcon = document.getElementById("toastIcon");
+        const year = document.getElementById("year");
+
+        if (year) {
+          year.textContent = new Date().getFullYear();
+        }
+
+        let hideToastTimer;
+
+        function showToast(title, message, isError = false) {
+          toastTitle.textContent = title;
+          toastMessage.textContent = message;
+          toastIcon.textContent = isError ? "!" : "✓";
+          toastIcon.style.background = isError
+            ? "linear-gradient(135deg, #ef4444, #dc2626)"
+            : "linear-gradient(135deg, #22c55e, #16a34a)";
+
+          toast.classList.add("show");
+
+          clearTimeout(hideToastTimer);
+          hideToastTimer = setTimeout(() => {
+            toast.classList.remove("show");
+          }, 4000);
+        }
+
+        if (toastClose) {
+          toastClose.addEventListener("click", () => {
+            toast.classList.remove("show");
+          });
+        }
+
+        if (!form) {
+          console.error("Formulaire #contactForm introuvable.");
+          return;
+        }
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          statusText.textContent = "Envoi en cours...";
+
+          const formData = new FormData(form);
+
+          try {
+            const response = await fetch(form.action, {
+              method: "POST",
+              body: formData,
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+              form.reset();
+              statusText.textContent = "";
+              showToast(
+                "Message envoyé",
+                "Merci, ton message a bien été envoyé. Je te répondrai dès que possible.",
+              );
+            } else {
+              statusText.textContent = "";
+              showToast(
+                "Erreur",
+                data.message || "L’envoi a échoué. Réessaie dans un instant.",
+                true,
+              );
+            }
+          } catch (error) {
+            statusText.textContent = "";
+            showToast(
+              "Erreur",
+              "Impossible d’envoyer le message pour le moment.",
+              true,
+            );
+            console.error(error);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
